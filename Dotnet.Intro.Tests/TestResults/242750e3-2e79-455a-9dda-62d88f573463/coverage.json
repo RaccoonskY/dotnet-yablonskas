@@ -1,0 +1,141 @@
+{
+  "Dotnet.Console.dll": {
+    "C:\\Users\\Victor\\source\\repos\\dotnet-yablonskas\\Dotnet.Console\\Program.cs": {
+      "Program": {
+        "System.Void Program::<Main>$(System.String[])": {
+          "Lines": {
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "7": 0,
+            "8": 0,
+            "10": 0,
+            "11": 0,
+            "15": 0,
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "27": 0
+          },
+          "Branches": [
+            {
+              "Line": 11,
+              "Offset": 73,
+              "EndOffset": 75,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 87,
+              "EndOffset": 89,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 101,
+              "EndOffset": 103,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 73,
+              "EndOffset": 119,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 87,
+              "EndOffset": 136,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 101,
+              "EndOffset": 153,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 115,
+              "EndOffset": 170,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 115,
+              "EndOffset": 187,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Dotnet.Intro.dll": {
+    "C:\\Users\\Victor\\source\\repos\\dotnet-yablonskas\\Dotnet.Intro\\Calculator.cs": {
+      "Dotnet.Intro.Calculator": {
+        "System.Single Dotnet.Intro.Calculator::Add(System.Single,System.Single)": {
+          "Lines": {
+            "5": 1
+          },
+          "Branches": []
+        },
+        "System.Single Dotnet.Intro.Calculator::Sub(System.Single,System.Single)": {
+          "Lines": {
+            "7": 1
+          },
+          "Branches": []
+        },
+        "System.Single Dotnet.Intro.Calculator::Mul(System.Single,System.Single)": {
+          "Lines": {
+            "9": 1
+          },
+          "Branches": []
+        },
+        "System.Single Dotnet.Intro.Calculator::Div(System.Single,System.Single)": {
+          "Lines": {
+            "11": 2
+          },
+          "Branches": [
+            {
+              "Line": 11,
+              "Offset": 6,
+              "EndOffset": 8,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 11,
+              "Offset": 6,
+              "EndOffset": 13,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    }
+  }
+}

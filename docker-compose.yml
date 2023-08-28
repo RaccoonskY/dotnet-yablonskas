@@ -1,0 +1,51 @@
+version: '3.4'
+
+services:
+  dotnet-seq:
+    image: datalust/seq:latest
+    container_name: dotnet-seq
+    restart: unless-stopped
+    environment:
+      - ACCEPT_EULA=Y
+    ports:
+      - target: 80
+        published: 5341
+        protocol: tcp
+        mode: host
+ 
+  dotnet-postgres:
+    image: postgres:13.3
+    environment:
+      POSTGRES_DB: "kaidb"
+      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "admin"
+    ports:
+      - "5432:5432"
+      
+  dotnet-web:
+    image: dotnet-web
+    environment:
+       ConnectionStrings:Default: "Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=diktator"
+    build:
+      context: .
+      dockerfile: Dotnet.Web/Dockerfile
+    ports:
+      - "5100:80"
+    depends_on:
+      - dotnet-postgres
+    links:
+      - dotnet-postgres
+      - dotnet-seq
+  
+  dotnet-web-admin:
+     image: dotnet-web-admin
+     build:
+       context: .
+       dockerfile: Dotnet.Web.Admin/Dockerfile
+     ports:
+       - "5101:80"
+     depends_on:
+       - dotnet-postgres
+       - dotnet-web
+     links:
+       - dotnet-postgres

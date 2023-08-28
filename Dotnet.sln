@@ -1,0 +1,87 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet.Web", "Dotnet.Web\Dotnet.Web.csproj", "{E82E34ED-6523-4D3C-8F92-BE1959F09C74}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet.Web.Tests", "Dotnet.Web.Tests\Dotnet.Web.Tests.csproj", "{3C1F17D6-7B73-41C6-A71A-AF2600EEE191}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{1C8A246A-4F78-4EF6-AC11-AEF39606EC19}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet.Web.Admin", "Dotnet.Web.Admin\Dotnet.Web.Admin.csproj", "{BB571BC0-A836-4A7A-B107-A9CE4C9A0AAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tasks", "Tasks", "{7D25F93C-9172-4416-BE68-6051466E80A5}"
+	ProjectSection(SolutionItems) = preProject
+		Tasks\asp-net.md = Tasks\asp-net.md
+		Tasks\auth.md = Tasks\auth.md
+		Tasks\bl.md = Tasks\bl.md
+		Tasks\configuration.md = Tasks\configuration.md
+		Tasks\db.md = Tasks\db.md
+		Tasks\docker.md = Tasks\docker.md
+		Tasks\intro.md = Tasks\intro.md
+		Tasks\loging.md = Tasks\loging.md
+		README.md = README.md
+		Tasks\rest.md = Tasks\rest.md
+		Tasks\testing.md = Tasks\testing.md
+		Tasks\ui.md = Tasks\ui.md
+		Tasks\validation.md = Tasks\validation.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{74AE51D6-77C4-4E68-87F4-C5AAA7AC4AA6}"
+	ProjectSection(SolutionItems) = preProject
+		.gitlab-ci.yml = .gitlab-ci.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet.Intro", "Dotnet.Intro\Dotnet.Intro.csproj", "{1C731143-3827-4E41-A75F-470B305A98A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet.Console", "Dotnet.Console\Dotnet.Console.csproj", "{4687C737-37F3-40E1-B346-319A20D96BAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.Intro.Tests", "Dotnet.Intro.Tests\Dotnet.Intro.Tests.csproj", "{9F613672-B20E-47DB-913A-A2B3672375E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.Intro.Web", "Dotnet.Intro.Web\Dotnet.Intro.Web.csproj", "{4F42F059-C928-444A-8E5D-48E3B3C10EE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E82E34ED-6523-4D3C-8F92-BE1959F09C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E82E34ED-6523-4D3C-8F92-BE1959F09C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E82E34ED-6523-4D3C-8F92-BE1959F09C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E82E34ED-6523-4D3C-8F92-BE1959F09C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C1F17D6-7B73-41C6-A71A-AF2600EEE191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1F17D6-7B73-41C6-A71A-AF2600EEE191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1F17D6-7B73-41C6-A71A-AF2600EEE191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1F17D6-7B73-41C6-A71A-AF2600EEE191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB571BC0-A836-4A7A-B107-A9CE4C9A0AAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB571BC0-A836-4A7A-B107-A9CE4C9A0AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB571BC0-A836-4A7A-B107-A9CE4C9A0AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB571BC0-A836-4A7A-B107-A9CE4C9A0AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C731143-3827-4E41-A75F-470B305A98A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C731143-3827-4E41-A75F-470B305A98A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C731143-3827-4E41-A75F-470B305A98A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C731143-3827-4E41-A75F-470B305A98A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4687C737-37F3-40E1-B346-319A20D96BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4687C737-37F3-40E1-B346-319A20D96BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4687C737-37F3-40E1-B346-319A20D96BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4687C737-37F3-40E1-B346-319A20D96BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F613672-B20E-47DB-913A-A2B3672375E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F613672-B20E-47DB-913A-A2B3672375E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F613672-B20E-47DB-913A-A2B3672375E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F613672-B20E-47DB-913A-A2B3672375E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F42F059-C928-444A-8E5D-48E3B3C10EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F42F059-C928-444A-8E5D-48E3B3C10EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F42F059-C928-444A-8E5D-48E3B3C10EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F42F059-C928-444A-8E5D-48E3B3C10EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8FF6119-A9E0-45CD-BAC3-069768067627}
+	EndGlobalSection
+EndGlobal

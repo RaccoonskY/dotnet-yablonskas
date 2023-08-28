@@ -1,0 +1,46 @@
+# https://gitlab.com/gitlab-org/gitlab/-/blob/7b1d0dfb4a24407499d59251cdfcc60f23e841c7/lib/gitlab/ci/templates/dotNET-Core.gitlab-ci.yml
+image : mcr.microsoft.com/dotnet/sdk:7.0
+
+variables:
+  OBJECTS_DIRECTORY: 'obj'
+  NUGET_PACKAGES_DIRECTORY: '.nuget'
+  SOURCE_CODE_PATH: '*/*/'
+
+cache:
+  key: "$CI_JOB_STAGE-$CI_COMMIT_REF_SLUG"
+  paths:
+    - '$SOURCE_CODE_PATH$OBJECTS_DIRECTORY/project.assets.json'
+    - '$SOURCE_CODE_PATH$OBJECTS_DIRECTORY/*.csproj.nuget.*'
+    - '$NUGET_PACKAGES_DIRECTORY'
+
+before_script:
+  - 'dotnet restore --packages $NUGET_PACKAGES_DIRECTORY'
+
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  tags:
+    - dotnet
+  script:
+    - 'dotnet build --no-restore'
+   
+test:
+  stage: test
+  tags:
+    - dotnet
+  script:
+    - 'cd Dotnet.Web.Tests'
+    - 'dotnet test --no-restore --collect:"XPlat Code Coverage" --logger:"junit;LogFilePath=dotnet-test-result.xml"'
+  coverage: '/Line coverage: \d+/'     
+  artifacts:
+    paths:
+      - ./Dotnet.Web.Tests/TestResults/*/coverage.cobertura.xml
+      - ./Dotnet.Web.Tests/dotnet-test-result.xml
+    reports:
+      junit: ./Dotnet.Web.Tests/dotnet-test-result.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: './Dotnet.Web.Tests/TestResults/*/coverage.cobertura.xml'     

@@ -1,0 +1,56 @@
+SF:C:\Users\Victor\source\repos\dotnet-yablonskas\Dotnet.Console\Program.cs
+FN:2,System.Void Program::<Main>$(System.String[])
+FNDA:0,System.Void Program::<Main>$(System.String[])
+DA:3,0
+DA:4,0
+DA:5,0
+DA:7,0
+DA:8,0
+DA:10,0
+DA:11,0
+DA:15,0
+DA:16,0
+DA:18,0
+DA:19,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:27,0
+BRDA:11,73,0,0
+BRDA:11,87,0,0
+BRDA:11,101,0,0
+BRDA:11,73,1,0
+BRDA:11,87,1,0
+BRDA:11,101,1,0
+BRDA:11,115,1,0
+BRDA:11,115,0,0
+LF:16
+LH:0
+BRF:8
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\Victor\source\repos\dotnet-yablonskas\Dotnet.Intro\Calculator.cs
+FN:4,System.Single Dotnet.Intro.Calculator::Add(System.Single,System.Single)
+FNDA:1,System.Single Dotnet.Intro.Calculator::Add(System.Single,System.Single)
+DA:5,1
+FN:6,System.Single Dotnet.Intro.Calculator::Sub(System.Single,System.Single)
+FNDA:1,System.Single Dotnet.Intro.Calculator::Sub(System.Single,System.Single)
+DA:7,1
+FN:8,System.Single Dotnet.Intro.Calculator::Mul(System.Single,System.Single)
+FNDA:1,System.Single Dotnet.Intro.Calculator::Mul(System.Single,System.Single)
+DA:9,1
+FN:10,System.Single Dotnet.Intro.Calculator::Div(System.Single,System.Single)
+FNDA:2,System.Single Dotnet.Intro.Calculator::Div(System.Single,System.Single)
+DA:11,2
+BRDA:11,6,0,1
+BRDA:11,6,1,1
+LF:4
+LH:4
+BRF:2
+BRH:2
+FNF:4
+FNH:4
+end_of_record
